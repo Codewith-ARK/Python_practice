@@ -34,14 +34,28 @@
     padding: 20px;
     width: 45%;
     height: 200px;
-    display: flexbox;
     float: right; 
 
+    overflow: auto;
+    
     background-color: rgba(54, 54, 54, 0.7);
     border-radius: 0px 18px 18px 0px;
 
     font-family: 'Space Mono', monospace;
     font-size: 16px;
+}
+
+.task-code-container::-webkit-scrollbar {
+    width: 5px;
+}
+.task-code-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.task-code-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  .task-code-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .task-heading{
@@ -53,5 +67,23 @@
 .task-desc{
     font-size: 16px;
     font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-family: 'Fira Mono', monospace;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+#main-head p{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(223, 221, 221);
+
+}
+h2{
+    font-family: 'Fira Mono', monospace;
+    font-size: 32px;
+    color: white;
 }
 
