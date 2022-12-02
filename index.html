@@ -1,121 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fonts for the code -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet">
 
+        <!-- general text for the website -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- fonts for the code -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <title>Python UI</title>
 
-    <!-- general text for the website -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body{
-            margin: 25px 150px;
-        }
-        .day-container{
-            margin: 30px;
-            background-color: #eee;
-            padding: 15px;
-            border-radius: 15px;
-        }
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main-head">
+            <h1>My Python Practice Catalog</h1>
+            <p>A collection of all the code i created while #100DaysOfPython</p>
+        </div>
 
-        h1, h2, h3, p{
-            font-family: 'Fira Mono', monospace;
-        }
-        h2{
-            text-align: center;
-            font-size: 26px;
-        }
-        .task-heading{
-            font-size: 16px;
-        }
-
-        .code-container{
-            border-radius: 10px;
-            /* padding: 8px; */
-            background-color: rgb(212, 212, 212);
-        }
-
-        .code-heading{
-            border-radius: 10px 10px 0px 0px;
-            padding: 3px 8px;
-            text-align: center;
-            background-color: rgb(182, 181, 181);
-            margin: 0px;
-        }
-
-        .code{
-            font-family: 'Space Mono', monospace;
-            
-            padding: 5px 10px;
-            overflow-y: auto;
-            overflow-x: auto;
-            max-height: 250px;
-        }
-        .task-container{
-            padding:0px;
-        }
-        .task-divider{
-            margin-top: 20px;
-            width: 80%;
-            border: 1px solid rgba(206, 206, 206, 0.5);
-            border-radius: 1px;
-        }
-        #main-div{
-            width: 100%;
-            height: 100vh;
-            background: rgb(2,0,136);
-            background: linear-gradient(66deg, rgba(2,0,136,1) 27%, rgba(46,194,198,0.908000700280112) 59%, rgba(255,252,0,1) 88%);
-        }
-        @media only screen and (max-width: 768px) {
-            body{
-                margin: 15px;
-            }
-        }
-    </style>
-
-    <title>My Python Practice Files</title>
-</head>
-<body>
-    <div id="main-div">
-        <h1>Python Zero to Job-Ready</h1>
-    </div>
-<hr>
-
-<div class="day-container">
-<h2>Day 1</h2>
-<hr>
-<div class="task-container">
-<p class="task-heading">Task 01: Print 'twinkle twinkle little star' poem in python</p>
-<div class="code-container">
-<div class="code-heading"><p class="code-heading">Code Heading</p></div>
-<div class="code">
-<pre>
-<!-- <code> -->
+        <div class="day-container">
+            <h2>Day 1</h2>
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 01</p>
+                    <p class="task-desc">Print 'Twinkle Twinkle Little Star Poem'</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
 # Day 01 - Task 01
 # Print the poem 'twinkle twinkle little star' with python
 
 print("Line 1: Twinkle Twinkle little star\nLine 2: How i wonder what you are\nLine 3: Up above the world so high\nLine 4: Like a diamond in the sky")
-<!-- </code> -->
-</pre>
-</div>
-</div>
-</div>
-<hr class="task-divider">
-<div class="task-container">
-    <p class="task-heading">Task 02: Print 'table of number 5'</p>
-    <div class="code-container">
-        <div class="code-heading">
-            <p class="code-heading">Code Heading</p>
-        </div>
-        <div class="code">
-<pre>
-<code>
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 02</p>
+                    <p class="task-desc">Print the table of five with 'REPL' but i used vs code to do it</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
 # Day 1 - Task 02
 # Print the table of five with 'REPL' but i used vs code to do it
 print(5*1)
@@ -128,22 +60,17 @@ print(5*7)
 print(5*8)
 print(5*9)
 print(5*10)
-</code>
-</pre>
-        </div>
-    </div>
-</div>
+                    </code></pre>
+                </div>
+            </div>
 
-<hr class="task-divider">
-<div class="task-container">
-    <p class="task-heading">Task 03: Import an 'external module' and use it</p>
-    <div class="code-container">
-        <div class="code-heading">
-            <p class="code-heading">Code Heading</p>
-        </div>
-        <div class="code">
-<pre>
-<code>
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 03</p>
+                    <p class="task-desc">Import an external module and use it</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
 # Day 01 - Task 03
 # Import an external module and use it
 
@@ -155,24 +82,22 @@ print(myParagraph + "\n");
 
 # this print statment will directly output the return value of 'paragraph()' method
 print(lorem.paragraph());
-</code>
-</pre>
+                    </code></pre>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>
-<!-- end of Day 1 -->
 
-<div class="day-container">
-    <h2>Day 2</h2>
-    <hr>
-    <div class="task-container">
-    <p class="task-heading">Task 01: 'Literals' in python</p>
-    <div class="code-container">
-    <div class="code-heading"><p class="code-heading">Code Heading</p></div>
-    <div class="code">
-<pre>
-<!-- <code> -->
+        <hr>
+
+        <div class="day-container">
+        <h2>Day 2</h2>
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 01</p>
+                    <p class="task-desc">Literals in Python, 'Literals' in Python are described as the constant values.</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
 #Day 02 - Task 01: Literals in Python
 
 #Literals in Python are described as the constant values
@@ -190,21 +115,17 @@ string = greeting + intro + fullStop
 floatValue = 3.142
 
 intValue = 21072004
-<!-- </code> -->
-</pre>
-    </div>
-    </div>
-    </div>
-    <hr class="task-divider">
-    <div class="task-container">
-        <p class="task-heading">Task 02: 'Conversions' in Python</p>
-        <div class="code-container">
-            <div class="code-heading">
-                <p class="code-heading">Code Heading</p>
+                    </code></pre>
+                </div>
             </div>
-            <div class="code">
-<pre>
-<code>
+
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 02</p>
+                    <p class="task-desc">'Conversions' in Python</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
 #Day 02 - Task 02: Conversions in Python
 
 # converting 'string' into 'int'
@@ -214,14 +135,32 @@ intNum = stringNum
 # 'float' to 'int'
 floatNum = 3.142                #value in 'float'
 otherIntNum = int(floatNum)     #floatNum value converted in 'int' 
-</code>
-</pre>
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="task-container">
+                <div class="task-text-cotainer">
+                    <p class="task-heading">Task 02</p>
+                    <p class="task-desc">Import an external module and use it</p>
+                </div>
+                <div class="task-code-container">
+                    <pre><code>
+# Day 01 - Task 03
+# Import an external module and use it
+
+import lorem;
+myParagraph = lorem.paragraph();
+
+# this is going to output the generated by the 'paragraph' method 
+print(myParagraph + "\n");
+
+# this print statment will directly output the return value of 'paragraph()' method
+print(lorem.paragraph());
+                    </code></pre>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <hr class="task-divider">
-    </div>
-    <!-- end of day 2 -->
-</body>
+
+    </body>
 </html>
