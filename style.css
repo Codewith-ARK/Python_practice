@@ -3,13 +3,19 @@
     margin: 0;
 }
 
+::selection{
+    color: white;
+    background-image: linear-gradient(to right, red, blue);
+    /* background-color: linear-gradient(to right, red, blue); */
+}
+
 #main-head{
     height: 100vh;
     width: 100%;
     text-align: center;
     
-    background: rgb(17,0,66);
-    background: linear-gradient(66deg, rgba(17,0,66,1) 28%, rgba(255,255,255,1) 100%);  
+    background: rgb(0,6,34);
+    background: linear-gradient(40deg, rgba(0,6,34,1) 33%, rgba(0,6,94,1) 75%); 
 }
 .day-container{
     padding: 25px 50px;
@@ -20,10 +26,11 @@
 .task-container{
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
 }
 .task-text-cotainer{
     padding: 20px;
-    width: 45%; 
+    width: 25%; 
     height: 200px;
 
     background: linear-gradient(to right, rgba(226, 226, 226, 0.103), rgba(226, 226, 226, 0.5));
@@ -85,4 +92,6 @@ code{
     color: aliceblue;
     font-family: 'Fira Mono', monospace;
 }
-
+#main-divider{
+    background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+}
